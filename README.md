@@ -1,3 +1,3 @@
 This is my portfolio. I am still working on this.
 
-Link: 
+Deployed Link: https://githubumang.github.io/portfolio/
