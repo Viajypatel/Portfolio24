@@ -63,3 +63,20 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
 ScrollReveal().reveal('.home-img img, .services-container, .project-box, .contact form', { origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left'});
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right '});
+
+window.addEventListener("load", function() {
+    const form = document.getElementById('my-form');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then(() => {
+        alert("Your message is sent!");
+        document.contact-form.reset();
+      })
+    });
+  });
