@@ -201,6 +201,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotate(360deg);
 
     animation: professionRotate 10s ease-out infinite;
 }
@@ -704,7 +705,7 @@ span{
     }
 
     .home .profession-box .profession:nth-child(1){
-        transform: rotate(-90deg) translate(-120px, -210px);
+        transform: rotate(-90deg) translate(268px, -590px);
     }
 
     .home .profession-box .profession:nth-child(1) i{
@@ -712,18 +713,20 @@ span{
     }
 
     .home .profession-box .profession:nth-child(2){
-        transform: rotate(0deg) translate(0, -335px);
-        padding: 5px;
-        margin-right: 5px;
-        margin-top: 30px;
+        transform: rotate(0deg) translate(-2px, -335px);
+        padding: 10px;
+        /* margin-right: 5px;
+        margin-top: 30px; */
     }
 
     .home .profession-box .profession:nth-child(3){
-        transform: rotate(90deg) translate(-115px, -450px);
+        transform: rotate(90deg) translate(272px, -50px);
     }
 
     .home .profession-box .profession:nth-child(4){
-        transform: rotate(180deg) translate(-220px, -335px);
+        transform: rotate(180deg) translate(625px, -320px);
+        /* margin: 5px; */
+        padding: 20px;
     }
 
     .home .profession-box .circle{
@@ -785,16 +788,18 @@ span{
         padding: 0 3% 30rem;
     }
 
-    .home .profession-box .profession:nth-child(1){
+    /* .home .profession-box .profession:nth-child(1){
         transform: rotate(-90deg) translate(-110px, -220px);
-    }
-
-    .home .profession-box .profession:nth-child(2){
-        transform: rotate(0deg) translate(5px, -335px);
-    }
+    } */
 
     .home .profession-box .profession:nth-child(3){
-        transform: rotate(180deg) translate(-210px, -335px);
+        transform: rotate(90deg) translate(279px, -40px);
+    }
+
+    .home .profession-box .profession:nth-child(4){
+        transform: rotate(180deg) translate(635px, -320px);
+        /* margin: 5px; */
+        padding: 20px;
     }
 
     .contact form .input-box input{
@@ -803,6 +808,9 @@ span{
 }
 
 @media (max-width: 365px){
+    .home .profession-container{
+        margin-top: 20px;
+    }
     .about-img img{
         width: 90vw;
     }
