@@ -429,6 +429,11 @@ span{
     color: var(--text-color);
     font-weight: bold;
 }
+.services-box img{
+    height: 20px;
+    padding-right: 10px;
+}
+
 
 .project{
     padding-bottom: 10rem;
