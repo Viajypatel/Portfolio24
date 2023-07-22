@@ -143,6 +143,10 @@ section{
     font-size: 1.6rem;
 }
 
+.home-content p b{
+    color: var(--main-color);
+}
+
 .home-content .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -421,6 +425,10 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+.services-box .project-a{
+    color: var(--text-color);
+    font-weight: bold;
+}
 
 .project{
     padding-bottom: 10rem;
@@ -484,6 +492,7 @@ span{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
+
 
 .project-layer a{
     display: inline-flex;
