@@ -334,8 +334,8 @@ span{
     height: 170%;
     display: none;
     padding-left: 20px;
-    overflow: scroll;
-    background: #FFF;
+    overflow-y: scroll;
+    background: var(--bg-color);
     box-shadow: 0 .1rem .5rem var(--shadow-color);
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
@@ -345,18 +345,12 @@ span{
     text-align: left;
 }
 .popup-content {
-    background-color: white;
-    /* margin: 10% auto; */
-    padding: 20px;
-    /* border: 1px solid #888888; */
-    /* width: 30%; */
     font-weight: bolder;
 }
 
 .popup-content h2{
     font-size: 4.5rem;
-
-    /* text-align: center; */
+    /* padding: 20px; */
 }
 
 .popup-content button {
@@ -369,7 +363,7 @@ span{
     margin: 0 auto;
 }
 .show {
-    
+
     display: block;
 }
 
