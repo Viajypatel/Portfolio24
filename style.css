@@ -514,6 +514,44 @@ span{
     color: #333;
 }
 
+.certificate-container{
+    display: flex;
+    text-align: center;
+}
+
+.certificate-container .certificate-button{
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,.1);
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.certificate-container .certificate-img-container{
+    height: 500px;
+    width: 60%;
+    margin: auto;
+    margin-top: 55px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+    background-color: rgba(0,0,0,.1);
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
+}
+
+.certificate-img-container img{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    transition: 1s;
+    position: absolute;
+}
+
+
+
 .contact h2{
     margin-bottom: 3rem;
 }

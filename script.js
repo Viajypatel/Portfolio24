@@ -54,6 +54,35 @@ window.onscroll = ()=>{
 
 }
 
+// ||||||||||||||||| SLIDER MOVING ||||||||||||||||||||||
+
+const slides = document.querySelectorAll('.slide');
+var size = slides.length;
+var counter = 0;
+
+slides.forEach((slide, index)=>{
+    slide.style.left = `${index*100}%`
+})
+
+function slideImage (){
+    slides.forEach((slide)=>{
+        slide.style.transform = `translateX(-${counter*100}%)`
+    })
+}
+
+function goNext(){
+    counter = (counter+1)%size;
+    slideImage();
+}
+
+function goPrev(){
+    counter--;
+    if(counter === -1){
+        counter = size-1;
+    }
+    slideImage();
+}
+
 // |||||||||||||||| DARK LIGHT MODE |||||||||||||||||||||
 let darkModeIcon = document.querySelector('#darkMode-icon');
 
